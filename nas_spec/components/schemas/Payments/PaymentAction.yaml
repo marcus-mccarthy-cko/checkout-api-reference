@@ -77,3 +77,5 @@ properties:
   metadata:
     type: object
     description: A set of key-value pairs that you can attach to an action
+  marketplace:
+    $ref: '#/components/schemas/MarketplaceActions'

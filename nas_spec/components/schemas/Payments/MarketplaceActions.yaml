@@ -1,13 +1,9 @@
-type: object
-description: Information related to marketplace payments
+﻿type: object
+description: Information related to action marketplace
 properties:
-  sub_entity_id:
-    type: string
-    description: The sub-entity that the payment is being processed on behalf of
-    example: 'ent_rgyzti4x74xubmu72m6r3pvksa'
   sub_entities:
     type: array
-    description: The sub-entities that the payment is being processed on behalf of - use for split payments.
+    description: The sub-entities that the payment is being captured on behalf of - use for split payments.
     minItems: 0
     maxItems: 10
     items:
@@ -24,8 +20,8 @@ properties:
         amount:
           type: integer
           description: |
-            The split amount - This amount minus commission will be credited to your sub-entity's currency account. The sum of all split amounts must be equal to the payment amount.      
-
+            The split amount - This amount minus commission will be credited to your sub-entity's currency account. The sum of all split amounts must be equal to the payment amount.
+            
             The amount must be provided in the <a href="https://docs.checkout.com/four/resources/calculating-the-amount" target="blank">minor currency unit</a>.
           minimum: 0
           example: 1000
