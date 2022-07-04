@@ -13,6 +13,10 @@ discriminator:
     alipay_hk: '#/components/schemas/PaymentRequestAlipayPlusSource'
     alipay_cn: '#/components/schemas/PaymentRequestAlipayPlusSource'
     gcash: '#/components/schemas/PaymentRequestAlipayPlusSource'
+    bancontact: '#/components/schemas/PaymentRequestBancontactSource'
+    multibanco: '#/components/schemas/PaymentRequestMultibancoSource'
+    postfinance: '#/components/schemas/PaymentRequestPostfinanceSource'
+    p24: '#/components/schemas/PaymentRequestP24Source'
 required:
   - type
 properties:
