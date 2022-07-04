@@ -10,6 +10,8 @@ discriminator:
     alipay_hk: '#/components/schemas/PaymentResponseAlipayPlusSource'
     alipay_cn: '#/components/schemas/PaymentResponseAlipayPlusSource'
     gcash: '#/components/schemas/PaymentResponseAlipayPlusSource'
+    giropay: '#/components/schemas/PaymentResponseGiropaySource'
+    eps: '#/components/schemas/PaymentResponseEPSSource'
 required:
   - type
 
