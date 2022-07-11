@@ -45,8 +45,9 @@ properties:
       - 3ds_outage
       - sca_delegation
       - out_of_sca_scope
-      - other
       - low_risk_program
+      - recurring_operation
+      - other
     example: 'low_value'
   challenge_indicator:
     type: string
