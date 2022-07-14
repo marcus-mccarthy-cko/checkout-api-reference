@@ -12,6 +12,8 @@ discriminator:
     gcash: '#/components/schemas/PaymentResponseAlipayPlusSource'
     giropay: '#/components/schemas/PaymentResponseGiropaySource'
     eps: '#/components/schemas/PaymentResponseEPSSource'
+    fawry: '#/components/schemas/PaymentResponseFawrySource'
+    ideal: '#/components/schemas/PaymentResponseIdealSource'
 required:
   - type
 
