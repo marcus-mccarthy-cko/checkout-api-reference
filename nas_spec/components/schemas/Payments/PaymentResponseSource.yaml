@@ -14,6 +14,8 @@ discriminator:
     multibanco: '#/components/schemas/PaymentResponseMultibancoSource'
     postfinance: '#/components/schemas/PaymentResponsePostfinanceSource'
     p24: '#/components/schemas/PaymentResponseP24Source'
+    fawry: '#/components/schemas/PaymentResponseFawrySource'
+    ideal: '#/components/schemas/PaymentResponseIdealSource'
 required:
   - type
 
