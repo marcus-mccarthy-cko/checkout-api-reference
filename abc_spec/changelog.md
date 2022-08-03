@@ -2,7 +2,9 @@
 
 | Date       | Description of change                                                                                           |
 |------------| --------------------------------------------------------------------------------------------------------------- |
-| 2022/06/23 | Added 3ds2.2 exemptions                                                                                         |
+| 2022/08/03 | Added 3ds2.2 exemptions                                                                                         |
+| 2022/07/29 | Update Java, C#, PHP & Python code samples to match new SDK Version.                                            |
+| 2022/07/14 | Add `locale` property to Get Payment Link details response                                                      |
 | 2022/05/11 | Added Arabic locale option to Hosted Payments Page and Payment Links.                                           |
 | 2022/05/10 | Added `3ds.challenge_indicator` to Hosted Payments Page and Payment Links.                                      |
 | 2022/04/27 | Added Scandinavian locale options to Hosted Payments Page and Payment Links.                                    |

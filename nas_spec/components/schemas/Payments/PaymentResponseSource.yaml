@@ -12,6 +12,11 @@ discriminator:
     gcash: '#/components/schemas/PaymentResponseAlipayPlusSource'
     fawry: '#/components/schemas/PaymentResponseFawrySource'
     ideal: '#/components/schemas/PaymentResponseIdealSource'
+    sofort: '#/components/schemas/PaymentResponseSofortSource'
+    dana: '#/components/schemas/PaymentResponseAlipayPlusSource'
+    kakaopay: '#/components/schemas/PaymentResponseAlipayPlusSource'
+    truemoney: '#/components/schemas/PaymentResponseAlipayPlusSource'
+    tng: '#/components/schemas/PaymentResponseAlipayPlusSource'
 required:
   - type
 
