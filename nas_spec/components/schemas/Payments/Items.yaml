@@ -51,3 +51,23 @@ items:
       description: Unified product No. defined by WeChat Pay
       maxLength: 32
       example: 1001
+    type:
+      type: string
+      description: The type of line item
+      enum:
+        - physical
+        - discount
+        - shipping_fee
+        - sales_tax
+        - digital
+        - gift_card
+        - store_credit
+        - surcharge
+    product_url:
+      type: string
+      maxLength: 1024
+      description: URL to the product in the merchant''s webshop that can be later used in communications between Klarna and the customer.
+    image_url:
+      type: string
+      maxLength: 1024
+      description: URL to an image that can be later embedded in communications between Klarna and the customer. A minimum of 250x250 px resolution is recommended for the image to look good in the Klarna app, and below 50x50 px won't even show. We recommend using a good sized image (650x650 px or more), however the file size must not exceed 12MB.
