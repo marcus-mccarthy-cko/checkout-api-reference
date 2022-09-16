@@ -297,3 +297,10 @@ properties:
     description: The shipping information for the payment capture. Maximum 500 items.
     items:
       $ref: '#/components/schemas/ShippingInfo'
+  acquiring_channel:
+    type: string
+    description: The acquiring channel in which the klarna session takes place. Ecommerce is default unless specified.
+    enum:
+      - ECOMMERCE
+      - IN_STORE
+      - TELESALES
