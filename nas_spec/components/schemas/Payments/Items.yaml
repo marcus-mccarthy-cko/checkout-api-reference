@@ -63,7 +63,7 @@ items:
         - gift_card
         - store_credit
         - surcharge
-    product_url:
+    url:
       type: string
       maxLength: 1024
       description: URL to the product in the merchant''s webshop that can be later used in communications between Klarna and the customer.
