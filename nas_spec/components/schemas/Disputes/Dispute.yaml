@@ -49,6 +49,7 @@ properties:
           predispute_received,
           predispute_accepted,
           predispute_declined,
+          predispute_resolved,
           evidence_required,
           evidence_under_review,
           resolved,

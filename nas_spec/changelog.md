@@ -2,7 +2,6 @@
 
 | Date       | Description of change
 |------------| ----------------------------------------------------------------------------------------------------------------------|
-| 2022/09/28 | Extending the dispute resolved status to support resolve_reason predispute_resolution
 | 2022/09/28 | Extending the Get dispute details endpoint to support the new pre-disputes statuses
 | 2022/09/28 | Extending the Get all disputes endpoint to support the new pre-disputes statuses
 | 2022/09/28 | Extending the accept dispute endpoint to support pre-disputes
