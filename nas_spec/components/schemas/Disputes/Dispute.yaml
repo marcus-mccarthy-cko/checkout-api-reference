@@ -46,6 +46,9 @@ properties:
     description: The current status of the dispute
     enum:
       [
+          predispute_received,
+          predispute_accepted,
+          predispute_declined,
           evidence_required,
           evidence_under_review,
           resolved,
@@ -62,7 +65,7 @@ properties:
   resolved_reason:
     type: string
     description: If the dispute is automatically resolved, `resolved_reason` will contain the reason why it was resolved
-    enum: [ rapid_dispute_resolution, negative_amount, already_refunded ]
+    enum: [ predispute_resolution, rapid_dispute_resolution, negative_amount, already_refunded]
     example: 'already_refunded'
   relevant_evidence:
     type: array
