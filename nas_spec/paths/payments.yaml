@@ -36,6 +36,9 @@ post:
                 id: 'cus_udst2tfldj6upmye2reztkmm4i'
                 email: 'brucewayne@gmail.com'
                 name: 'Bruce Wayne'
+                phone:
+                  country_code: '+1'
+                  number: '415 555 2671'
               billing_descriptor:
                 name: SUPERHEROES.COM
                 city: GOTHAM
@@ -135,6 +138,9 @@ post:
               id: 'cus_udst2tfldj6upmye2reztkmm4i'
               email: 'brucewayne@gmail.com'
               name: 'Bruce Wayne'
+              phone:
+                country_code: '+1'
+                number: '415 555 2671'
             processed_on: '2019-09-10T10:11:12Z'
             reference: 'ORD-5023-4E89'
             processing:
@@ -149,9 +155,9 @@ post:
               action:
                 href: 'https://api.sandbox.checkout.com/payments/pay_mbabizu24mvu3mela5njyhpit4/actions'
               void:
-                href: 'https://api.sandbox.checkout.com/payments/pay_mbabizu24mvu3mela5njyhpit4/captures'
-              capture:
                 href: 'https://api.sandbox.checkout.com/payments/pay_mbabizu24mvu3mela5njyhpit4/voids'
+              capture:
+                href: 'https://api.sandbox.checkout.com/payments/pay_mbabizu24mvu3mela5njyhpit4/captures'
       headers:
         Cko-Request-Id:
           $ref: '#/components/headers/Cko-Request-Id'
