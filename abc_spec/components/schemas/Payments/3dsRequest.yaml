@@ -53,6 +53,6 @@ properties:
     default: no_preference
   allow_upgrade:
     type: boolean
-    description: Whether to process this payment as 3D Secure if the authorization was soft declined due to 3DS authentication required
+    description: Whether to process this payment as 3D Secure, if the authorization was soft declined due to 3DS authentication required. The value will default to false for merchant accounts created before `2022-09-27`.
     default: true
     example: true
