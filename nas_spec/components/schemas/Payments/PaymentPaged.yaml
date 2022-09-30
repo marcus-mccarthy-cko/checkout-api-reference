@@ -10,7 +10,7 @@ properties:
     example: 10
   total_count:
     type: integer
-    description: The total number of payments retrieved (without taking into consideration skip and limit parameters)
+    description: The total number of matching payments available (without taking into consideration skip and limit parameters)
     example: 1
   data:
     type: array
