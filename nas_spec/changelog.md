@@ -1,13 +1,39 @@
 # Changelog
 
-| Date       | Description of change                                                                                                 
+| Date       | Description of change                                                                                                 |
 |------------|-----------------------------------------------------------------------------------------------------------------------|
-| 2022/12/14 | Added resolved_reason to get all disputes response for NAS and MBC.                                                   |
+| 2022/02/10 | Added resolved_reason to get all disputes response for NAS and MBC.                                                   |
+| 2023/02/10 | Updated `zip` format requirements to display as code style                                             |
+| 2023/02/09 | Updated `zip` code format requirements for US merchants for Card Payouts                                              |
+| 2023/02/07 | Added Portuguese and Greek locale options to Hosted Payments Page and Payment Links                                   |
+| 2023/02/01 | Update file uploads/retrievals for Platforms                                                                          |
+| 2023/02/01 | Added the API reference for the Financial Actions API.                                                                |
+| 2023/01/26 | Add SEPA DD NAS Request and Response sources                                                                          |
+| 2023/01/24 | Update PaymentResponse `processing` object to add `partner_payment_id`, `partner_status`, `partner_transaction_id`,   |
+|            | `partner_error_codes`, `partner_error_message`, `partner_authorization_code`, `partner_authorization_response_code`   |
+|            | properties.                                                                                                           |
+| 2023/01/24 | Update ProcessingData to add `retrieval_reference_number`, `partner_status`, `partner_transaction_id`,                |  
+|            | `partner_authorization_code`, `partner_authorization_response_code` properties.                                       |
+| 2023/01/18 | Renamed partner_reason to partner_error_message for Reverse API payment methods                                       |
+| 2023/01/16 | Replaced the deprecated "reporting" scope with the new "reports" scope in Reports API.                                |
+| 2023/01/12 | Accuracy and readability improvements to NAS card payouts.                                                            |
+| 2023/01/11 | Remove old description from the session request's payload.                                                            |
+| 2023/01/04 | Add new tags to Platforms section and add `id` property on a response for PATCH payment instrument request.           |
+| 2023/01/04 | Add API key security to remaining Integrated Platforms endpoints.                                                     |
+| 2023/01/03 | Add Platforms Update Payment Instrument Request spec.                                                                 |
+| 2022/12/30 | Replaced sample MCCs value `5669` with valid MCCs value `5311`.                                                       |
+| 2022/12/20 | Added `first_name` and `address` to `recipient`, deprecated `recipient.zip`, made `sender.address` optional.          |
+| 2022/12/15 | Change Platforms schedule `by_day` response samples to use arrays.                                                    |
+| 2022/12/15 | Add CV Connect NAS Request and Response source.                                                                       |
+| 2022/12/15 | Add Trustly NAS Request and Response source.                                                                          |
+| 2022/12/15 | Add Illicado NAS Request and Response source.                                                                         |
+| 2022/12/14 | Add missing `available` property to Accounts Individual and Company responses                                         |
 | 2022/12/13 | Remove third-party fields from integrated auth                                                                        |
 | 2022/11/30 | Add API key security to IP endpoints.                                                                                 |
 | 2022/11/29 | Adding prism device_session_id to payment request.                                                                    |
 | 2022/11/15 | Adding a `entity` to BankPayoutRequest source.                                                                        |
 | 2022/11/14 | Changing Card Metadata API request format                                                                             |
+| 2022/11/09 | Removed the `risk` endpoints                                                                                          |
 | 2022/11/03 | Added `score` property to the `risk` object on the 201 created payment response and GET details response              |
 | 2022/11/02 | Fix indentation bug causing 'document' property to not be shown in `PlatformsPaymentInstrumentCreate.yaml`            |   
 | 2022/11/02 | Ensure 'document' property is exposed on all relevant Platforms payment instruments schemas                           |
@@ -103,4 +129,3 @@
 | 2021/11/11 | Added `3ds.challenge_indicator` to card payment requests.                                                             |
 | 2021/11/03 | Adds `identification` object under parent `sender` object in payment request.                                         |
 | 2021/10/18 | Added the `marketplaces.sub-entities` object to support split payments.                                               |
-| 2022/11/09 | Removed the `risk` endpoints                                                                                          |

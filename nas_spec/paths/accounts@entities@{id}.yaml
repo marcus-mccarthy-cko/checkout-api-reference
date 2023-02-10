@@ -32,8 +32,10 @@ get:
                 reference: superhero1234
                 capabilities:
                   payments:
+                    available: true
                     enabled: false
                   payouts:
+                    available: true
                     enabled: false
                 status: pending
                 contact_details:
@@ -45,7 +47,7 @@ get:
                   urls:
                     - https://www.superheroexample.com
                   mccs:
-                    - '5669'
+                    - '5311'
                 company:
                   business_registration_number: '452349600005'
                   business_type: "public_limited_company"
@@ -109,8 +111,10 @@ get:
                 reference: superhero1234
                 capabilities:
                   payments:
+                    available: true
                     enabled: false
                   payouts:
+                    available: true
                     enabled: false
                 contact_details:
                   phone:
@@ -121,7 +125,7 @@ get:
                   urls:
                     - https://www.superheroexample.com
                   mccs:
-                    - '5669'
+                    - '5311'
                 individual:
                   first_name: John
                   middle_name: Paul
@@ -198,7 +202,7 @@ put:
                 urls:
                   - https://www.superheroexample.com
                 mccs:
-                  - '5669'
+                  - '5311'
               company:
                 business_registration_number: '452349600005'
                 business_type: "public_limited_company"
@@ -256,7 +260,7 @@ put:
                 urls:
                   - https://www.superheroexample.com
                 mccs:
-                  - '5669'
+                  - '5311'
               individual:
                 first_name: 'John'
                 last_name: 'Doe'
@@ -277,6 +281,8 @@ put:
                   national_id_number: 'AB123456C'
   security:
     - OAuth:
+        - accounts
+    - ApiSecretKey:
         - accounts
   responses:
     '200':

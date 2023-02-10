@@ -1,6 +1,5 @@
 openapi: '3.0.1'
 info:
-  version: '1.0.0'
   title: Checkout.com API Reference
   x-logo:
     url: 'https://assets.checkout.com/docs/logos/logo-checkout-api-dark.svg'
@@ -35,6 +34,8 @@ info:
 
     Never share your OAuth credentials, API keys, or access tokens. Keep them guarded and secure.
 
+    <SecurityDefinitions />
+
 servers:
   - url: https://api.sandbox.checkout.com
     description: Sandbox API
@@ -61,8 +62,14 @@ tags:
     description: Keep track of and act on your open disputes (also known as chargebacks) to submit the best possible response.
   - name: Platforms
     description: Manage all your sub-entities (also known as sub-merchants) through one integration, globally.
+  - name: Payment instruments
+    description: Manage bank account payment instruments for your sub-entities.
+  - name: Payout schedules
+    description: View and manage payout schedules for your sub-entities.
   - name: Reports
     description: Retrieve your reconciliation reports programmatically with the <a href="https://www.checkout.com/docs/reporting/reports-api">Reports API</a>.
+  - name: Financial actions
+    description: Returns all the processed financial actions associated with your given filter. The results are ordered by processing date in descending order (latest first).
   - name: Sessions
     description: Use Sessions to authenticate transactions with 3D Secure (3DS) and comply with Strong Customer Authentication (SCA) requirements.
   - name: Workflows
@@ -109,9 +116,12 @@ x-tagGroups:
   - name: Platforms
     tags:
       - Platforms
+      - Payment instruments
+      - Payout schedules
   - name: Reporting
     tags:
       - Reports
+      - Financial actions
   - name: Metadata
     tags:
       - Card metadata
